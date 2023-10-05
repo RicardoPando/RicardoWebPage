@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #F5F5F5;
+}
+
+/* Estilos para el conmutador */
+.switch-container {
+    /* quitarlo para que no este en el centro */
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.switch-label {
+    margin-right: 10px;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #ccc;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+/* Estilos para el modo claro (light mode) */
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilos para el modo oscuro (dark mode) */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Cambiar estilos del conmutador en el modo oscuro */
+body.dark-mode .switch {
+    background-color: #444;
+}
+
+body.dark-mode .switch::before {
+    transform: translateX(20px);
+}
+
+#nombre-Apellido{
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 1em;
+
+}
+
+
+
+
