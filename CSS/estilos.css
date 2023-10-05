@@ -69,11 +69,24 @@ body.dark-mode .switch::before {
 
 #nombre-Apellido{
     text-align: center;
-    font-size: 0.7em;
     padding-top: 1em;
-
 }
 
+.titulos h1{
+    font-size: 2em;
+}
+.titulos h2{
+    font-size: 1em;
+}
 
+.contenidoCV section
+{
+    padding-bottom: 1.2em;
+}
+
+.contenidoCV h2
+{
+    font-size: 1.1em;
+}
 
 
