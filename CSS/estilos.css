@@ -72,6 +72,13 @@ body.dark-mode .switch::before {
     padding-top: 1em;
 }
 
+
+.titulos svg
+{
+    float: right;
+    font-size: large;
+    transform: translateX(-15px);
+}
 .titulos h1{
     font-size: 2em;
 }
