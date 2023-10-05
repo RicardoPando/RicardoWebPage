@@ -79,6 +79,14 @@ body.dark-mode .switch::before {
     font-size: 1em;
 }
 
+
+.contenidoCV
+{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
 .contenidoCV section
 {
     padding-bottom: 1.2em;
