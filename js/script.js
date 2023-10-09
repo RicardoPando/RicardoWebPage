@@ -49,6 +49,18 @@ document.querySelector('#mode-switch').addEventListener('change', function() {
     // Cambia el color de relleno a blanco
     pathElement.setAttribute('fill', 'white');
 
+    const svgElement = document.getElementById('imagenExporPDF'); // Obtén el elemento SVG por su ID
+    const paths = svgElement.querySelectorAll('path'); // Obtén todas las rutas dentro del SVG
+    
+    // Itera a través de las rutas y cambia su color de relleno a blanco
+    for (let i = 0; i < paths.length; i++) {
+        paths[i].setAttribute('fill', 'white');
+    }
+    
+
+
+
+
 
   } else {
     // Cambia el contenido del elemento a "☀️" cuando está desactivado
@@ -66,10 +78,16 @@ document.querySelector('#mode-switch').addEventListener('change', function() {
           
         // Cambia el color de relleno a blanco
         pathElement.setAttribute('fill', 'black');
+
+        const svgElement = document.getElementById('imagenExporPDF'); // Obtén el elemento SVG por su ID
+        const paths = svgElement.querySelectorAll('path'); // Obtén todas las rutas dentro del SVG
+        
+        // Itera a través de las rutas y cambia su color de relleno a blanco
+        for (let i = 0; i < paths.length; i++) {
+            paths[i].setAttribute('fill', 'black');
+        }
   }
 });
-
-// agregar si 
 
 document.getElementById("icon_menu").addEventListener("click", mostrar_menu);
 
