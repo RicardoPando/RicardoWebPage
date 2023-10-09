@@ -31,9 +31,28 @@ document.querySelector('#mode-switch').addEventListener('change', function() {
   if (this.checked) {
     // Cambia el contenido del elemento a "🌙" cuando está activado
     modeSwitchLabel.textContent = "🌙";
+    const menu = document.getElementById('menu')
+    menu.style.color = 'black'; 
+
+    const barras_menu = document.getElementById('icon_menu'); // Obtén el elemento SVG por su ID
+// Luego, puedes acceder a los elementos rect dentro del SVG utilizando querySelectorAll
+    const rects = barras_menu.querySelectorAll('rect');
+    // Ahora, puedes trabajar con los elementos rects como una colección NodeList
+    // Por ejemplo, cambiar su color de fondo a blanco
+    rects.forEach(rect => {
+        rect.setAttribute('fill', 'white');
+    });
   } else {
     // Cambia el contenido del elemento a "☀️" cuando está desactivado
     modeSwitchLabel.textContent = "☀️";
+    const barras_menu = document.getElementById('icon_menu'); // Obtén el elemento SVG por su ID
+    // Luego, puedes acceder a los elementos rect dentro del SVG utilizando querySelectorAll
+        const rects = barras_menu.querySelectorAll('rect');
+        // Ahora, puedes trabajar con los elementos rects como una colección NodeList
+        // Por ejemplo, cambiar su color de fondo a blanco
+        rects.forEach(rect => {
+            rect.setAttribute('fill', 'black');
+        });
   }
 });
 
