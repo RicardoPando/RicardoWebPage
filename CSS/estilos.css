@@ -21,6 +21,11 @@ body{
     margin: 20px;
 }
 
+#logo-upc {
+    width: 5em; 
+    height: 5em;
+}
+
 .switch-label {
     margin-right: 10px;
 }
@@ -73,7 +78,6 @@ body.dark-mode .switch::before {
 }
 
 .titulos h1{
-    text-align: left;
     font-size: 2em;
 }
 .titulos h2{

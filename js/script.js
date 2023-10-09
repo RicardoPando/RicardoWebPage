@@ -42,6 +42,14 @@ document.querySelector('#mode-switch').addEventListener('change', function() {
     rects.forEach(rect => {
         rect.setAttribute('fill', 'white');
     });
+
+    const logoUPC = document.getElementById('logo-upc'); // Obtén el elemento SVG por su ID
+    const pathElement = logoUPC.querySelector('path'); // Obtén el elemento <path> dentro del SVG
+
+    // Cambia el color de relleno a blanco
+    pathElement.setAttribute('fill', 'white');
+
+
   } else {
     // Cambia el contenido del elemento a "☀️" cuando está desactivado
     modeSwitchLabel.textContent = "☀️";
@@ -53,9 +61,15 @@ document.querySelector('#mode-switch').addEventListener('change', function() {
         rects.forEach(rect => {
             rect.setAttribute('fill', 'black');
         });
+        const logoUPC = document.getElementById('logo-upc'); // Obtén el elemento SVG por su ID
+        const pathElement = logoUPC.querySelector('path'); // Obtén el elemento <path> dentro del SVG
+          
+        // Cambia el color de relleno a blanco
+        pathElement.setAttribute('fill', 'black');
   }
 });
 
+// agregar si 
 
 document.getElementById("icon_menu").addEventListener("click", mostrar_menu);
 
