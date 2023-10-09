@@ -36,3 +36,12 @@ document.querySelector('#mode-switch').addEventListener('change', function() {
     modeSwitchLabel.textContent = "☀️";
   }
 });
+
+
+document.getElementById("icon_menu").addEventListener("click", mostrar_menu);
+
+function mostrar_menu(){
+
+    document.querySelector(".Menu").classList.toggle("mostrar_menu");
+    
+}
