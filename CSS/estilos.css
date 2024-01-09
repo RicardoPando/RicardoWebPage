@@ -84,8 +84,19 @@ body.dark-mode .switch::before {
     font-size: 1em;
 }
 
+.conocimientoInformatica p{
+padding: 1em;
+}
 
+.idiomas p
+{
+    padding: 1em;
+}
 
+.cursos p
+{
+    padding: 1em;
+}
 /* Menu para mobile */
 #icon_menu{
     display: none;
