@@ -77,12 +77,10 @@ body.dark-mode .switch::before {
     padding-top: 1em;
 }
 
-#boton-t
+#toggleButton 
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+    width: 20em; /* Ajusta el valor según sea necesario */
+    height: auto; /* Mantiene la proporción original de la imagen */
 }
 
 #miSeccion {
