@@ -96,3 +96,17 @@ function mostrar_menu(){
     document.querySelector(".Menu").classList.toggle("mostrar_menu");
     
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var button = document.getElementById("toggleButton");
+    var seccion = document.getElementById("miSeccion");
+  
+    button.addEventListener("click", function() {
+      // Alternar la visibilidad de la sección
+      if (seccion.style.display === "none" || seccion.style.display === "") {
+        seccion.style.display = "block";
+      } else {
+        seccion.style.display = "none";
+      }
+    });
+  });

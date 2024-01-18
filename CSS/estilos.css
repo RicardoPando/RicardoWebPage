@@ -77,6 +77,14 @@ body.dark-mode .switch::before {
     padding-top: 1em;
 }
 
+#miSeccion {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+
+
 .titulos h1{
     font-size: 2em;
 }
