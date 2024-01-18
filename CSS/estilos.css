@@ -77,18 +77,36 @@ body.dark-mode .switch::before {
     padding-top: 1em;
 }
 
+@keyframes brillo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 #toggleButton 
 {
-    width: 20em; /* Ajusta el valor según sea necesario */
+    animation: brillo 2s infinite;
+    width: 18em; /* Ajusta el valor según sea necesario */
     height: auto; /* Mantiene la proporción original de la imagen */
 }
 
-#miSeccion {
+#SeccionContacto {
     display: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-  }
+    text-align: center;
+    margin-bottom: 10px
+}
+
+#SeccionContacto label,
+#SeccionContacto input,
+#SeccionContacto textarea {
+    margin-bottom: 10px;
+}
 
 
 .titulos h1{

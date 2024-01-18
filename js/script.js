@@ -99,14 +99,24 @@ function mostrar_menu(){
 
 document.addEventListener("DOMContentLoaded", function() {
     var button = document.getElementById("toggleButton");
-    var seccion = document.getElementById("miSeccion");
+    var seccion = document.getElementById("SeccionContacto");
+    var label = document.getElementById("SeccionContacto label");
+    var input = document.getElementById("SeccionContacto input");
+    var textarea = document.getElementById("SeccionContacto textarea");
+
   
     button.addEventListener("click", function() {
       // Alternar la visibilidad de la sección
       if (seccion.style.display === "none" || seccion.style.display === "") {
         seccion.style.display = "block";
+        label.style.display = "block";
+        input.style.display = "block";
+        textarea.style.display = "block";
       } else {
         seccion.style.display = "none";
+        label.style.display = "none";
+        input.style.display = "none";
+        textarea.style.display = "none";
       }
     });
   });
