@@ -77,6 +77,14 @@ body.dark-mode .switch::before {
     padding-top: 1em;
 }
 
+#boton-t
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 #miSeccion {
     display: none;
     padding: 10px;
